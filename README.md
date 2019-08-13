@@ -60,4 +60,4 @@ gcalendar all -d tomorrow
 - Work on timezone issue when creating events on the calendar
 
 ## To contribute
-To contribute just do a pull request and when you are done just do a merge request.
+To contribute just do a clone and when you are done just do a merge request.
