@@ -35,14 +35,14 @@ func ListAllEvents() error {
 		fmt.Println("You have no upcoming events on your calendar.")
 	} else {
 		table := tablewriter.NewWriter(os.Stdout)
-		table.SetHeader([]string{"NAME", "DATE"})
+		table.SetHeader([]string{"ID", "NAME", "DATE"})
 		dt := [][]string{}
 		for _, item := range events.Items {
 			date := item.Start.DateTime
 			if date == "" {
 				date = item.Start.Date
 			}
-			dt = append(dt, []string{item.Summary, date})
+			dt = append(dt, []string{item.Id, item.Summary, date})
 		}
 		for _, t := range dt {
 			table.Append(t)
