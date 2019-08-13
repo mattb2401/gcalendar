@@ -16,9 +16,6 @@ import (
 )
 
 func getClient(config *oauth2.Config) *http.Client {
-	// The file token.json stores the user's access and refresh tokens, and is
-	// created automatically when the authorization flow completes for the first
-	// time.
 	tokFile := "token.json"
 	tok, err := tokenFromFile(tokFile)
 	if err != nil {
@@ -38,7 +35,6 @@ func getTokenFromWeb(config *oauth2.Config) *oauth2.Token {
 	if _, err := fmt.Scan(&authCode); err != nil {
 		log.Fatalf("Unable to read authorization code: %v", err)
 	}
-
 	tok, err := config.Exchange(context.TODO(), authCode)
 	if err != nil {
 		log.Fatalf("Unable to retrieve token from web: %v", err)

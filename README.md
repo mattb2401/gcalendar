@@ -24,32 +24,40 @@ To install from the latest source, run:
 go get -u github.com/mattb2401/gcalendar
 ```
 
+
 ## Usage
 To initialize the application
 
 ```shell
-./gcalendar init
+gcalendar init
 ```
 
 To view a list of events in your calendar
 
 ```shell
-./gcalendar all
+gcalendar all
 ```
 
 To view a list of events in your calendar for a particular date
 
 ```shell
-./gcalendar all -d <date forexample "2019-06-03">
+gcalendar all -d <date forexample "2019-06-03">
 ```
 To view a list of events in your calendar for today or tomorrow
 
 ```shell
-./gcalendar all -d today
+gcalendar all -d today
 ```
 or 
 
 ```shell
-./gcalendar all -d tomorrow
+gcalendar all -d tomorrow
 ```
+## TODO
 
+- Work on test scenarios :) Never worked on them 
+- Work on editing events
+- Work on timezone issue when creating events on the calendar
+
+## To contribute
+To contribute just do a pull request and when you are done just do a merge request.
