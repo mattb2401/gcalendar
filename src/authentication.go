@@ -67,7 +67,7 @@ func saveToken(path string, token *oauth2.Token) {
 
 // Login attempts to login client using client token
 func GetClientToken() (*http.Client, error) {
-	b, err := ioutil.ReadFile("credentials.json")
+	b, err := ioutil.ReadFile(".env")
 	if err != nil {
 		return nil, err
 	}

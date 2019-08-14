@@ -9,7 +9,7 @@ import (
 
 var cfgFile string
 var rootCmd = &cobra.Command{
-	Use: "gCalendar",
+	Use: "welcome",
 	Short: `
 .------..------..------..------..------..------..------..------..------.
 |G.--. ||C.--. ||A.--. ||L.--. ||E.--. ||N.--. ||D.--. ||A.--. ||R.--. |

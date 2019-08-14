@@ -15,8 +15,7 @@
 package cmd
 
 import (
-	"gcalendar/src"
-
+	"github.com/mattb2401/gcalendar/src"
 	"github.com/spf13/cobra"
 )
 
