@@ -26,6 +26,22 @@ go get -u github.com/mattb2401/gcalendar
 
 
 ## Usage
+
+First setup your application credentials from Google console by creating a .env file with the following details 
+```shell
+{"installed":
+    {
+        "project_id":"<project ID provided by Google>",
+        "client_id":"<client ID provided by Google>",
+        "client_secret":"client secret provided by Google>",
+        "auth_uri":"https://accounts.google.com/o/oauth2/auth",
+        "token_uri":"https://oauth2.googleapis.com/token",
+        "auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs",
+        "redirect_uris":["urn:ietf:wg:oauth:2.0:oob","http://localhost"]
+    }
+}
+```
+
 To initialize the application
 
 ```shell
